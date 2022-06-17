@@ -13,15 +13,21 @@
 <body>
 
   <div class="container">
-    <div class="row">
-      <div class="col-md-12 jumbotron text-center white-text">
-        <h1 class="white-text">Belly Button Biodiversity Dashboard</h1>
-        <p class="white-text">Use the interactive charts below to explore the dataset</p>
+    <div class="row bg-dark">
+      <div class="col-md-12 jumbotron text-center" style="background-image: url(https://1sfj1635wrts49n9bz3kpi6y-wpengine.netdna-ssl.com/wp-content/uploads/2019/07/bacteria-ThinkstockPhotos-628978952-1400x400.jpg)">
+        <h1>Belly Button Biodiversity Dashboard</h1>
+        <p>Use the interactive charts below to explore the dataset</p>
       </div>
     </div>
     <div class="row">
-      <div class="col-md-2">
-        <div class="well">
+      <div class="col-md-12 text-center white-text">
+        <h2 class="white-text">Project Overview</h2>
+        <p class="white-text">What bacteria live in your belly button? If you participated in the study of Belly Button Biodiversity, use the drop down menu to select your unique ID number, and you will see a breakdown of the bacteria found in your belly button! Confirm the demographics match yours, and see the distribution and frequency of belly button bacteria cultured from you.</p>
+      </div>
+    </div>
+    <div class="row bg-dark">
+      <div class="col-md-2 bg-dark">
+        <div class="well bg-dark">
           <h5>Test Subject ID No.:</h5>
           <!-- <select id="selDataset"></select> -->
           <select id="selDataset" onchange="optionChanged(this.value)"></select>
@@ -33,15 +39,15 @@
           <div id="sample-metadata" class="panel-body"></div>
         </div>
       </div>
-      <div class="col-md-5">
+      <div class="col-md-5 bg-dark">
         <div id="bar"></div>
       </div>
-      <div class="col-md-5">
+      <div class="col-md-5 bg-dark">
         <div id="gauge"></div>
       </div>
     </div>
     <div class="row">
-      <div class="col-md-12">
+      <div class="col-md-12 bg-dark">
         <div id="bubble"></div>
       </div>
     </div>
